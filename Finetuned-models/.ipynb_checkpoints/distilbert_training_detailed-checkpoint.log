@@ -1,0 +1,59 @@
+2025-07-21 11:50:44,790 - __main__ - INFO - ==================================================
+2025-07-21 11:50:44,791 - __main__ - INFO - BERT Fine-tuning Training Session Started
+2025-07-21 11:50:44,791 - __main__ - INFO - Session Time: 2025-07-21 11:50:44
+2025-07-21 11:50:44,791 - __main__ - INFO - ==================================================
+2025-07-21 11:50:44,791 - __main__ - INFO - Checking system resources...
+2025-07-21 11:50:44,792 - __main__ - INFO - CPU Count: 16 physical, 32 logical
+2025-07-21 11:50:45,865 - __main__ - INFO - CPU Usage: 0.0%
+2025-07-21 11:50:45,866 - __main__ - INFO - Total RAM: 7.61 GB
+2025-07-21 11:50:45,866 - __main__ - INFO - Available RAM: 6.50 GB
+2025-07-21 11:50:45,866 - __main__ - INFO - RAM Usage: 14.5%
+2025-07-21 11:50:47,685 - __main__ - INFO - CUDA Available: True
+2025-07-21 11:50:47,723 - __main__ - INFO - CUDA Device Count: 1
+2025-07-21 11:50:47,725 - __main__ - INFO - Current CUDA Device: 0
+2025-07-21 11:50:47,725 - __main__ - INFO - CUDA Device Name: NVIDIA GeForce RTX 4060 Laptop GPU
+2025-07-21 11:50:47,760 - __main__ - INFO - GPU 0: NVIDIA GeForce RTX 4060 Laptop GPU
+2025-07-21 11:50:47,760 - __main__ - INFO -   Memory Total: 8188.0 MB
+2025-07-21 11:50:47,760 - __main__ - INFO -   Memory Used: 0.0 MB
+2025-07-21 11:50:47,760 - __main__ - INFO -   Memory Free: 7957.0 MB
+2025-07-21 11:50:47,760 - __main__ - INFO -   GPU Load: 0.0%
+2025-07-21 11:50:47,760 - __main__ - INFO - Model load path: Distilbert_base-model
+2025-07-21 11:50:47,760 - __main__ - INFO - Starting model loading process from: Distilbert_base-model
+2025-07-21 11:50:47,760 - __main__ - INFO - Loading BERT tokenizer...
+2025-07-21 11:50:47,779 - __main__ - INFO -   Tokenizer loaded successfully in 0.02 seconds
+2025-07-21 11:50:47,779 - __main__ - INFO -   Vocabulary size: 30522
+2025-07-21 11:50:47,779 - __main__ - INFO -   Model max length: 512
+2025-07-21 11:50:47,779 - __main__ - INFO -   Special tokens: {'unk_token': '[UNK]', 'sep_token': '[SEP]', 'pad_token': '[PAD]', 'cls_token': '[CLS]', 'mask_token': '[MASK]'}
+2025-07-21 11:50:47,779 - __main__ - INFO - Loading BERT model for sequence classification...
+2025-07-21 11:50:47,799 - __main__ - INFO - ✓ Model loaded successfully in 0.02 seconds
+2025-07-21 11:50:47,799 - __main__ - INFO -   Model type: DistilBertForSequenceClassification
+2025-07-21 11:50:47,800 - __main__ - INFO -   Number of parameters: 66,955,010
+2025-07-21 11:50:47,800 - __main__ - INFO -   Number of labels: 2
+2025-07-21 11:50:47,800 - __main__ - INFO -   Model configuration: DistilBertConfig {
+  "activation": "gelu",
+  "architectures": [
+    "DistilBertForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "dim": 768,
+  "dropout": 0.1,
+  "hidden_dim": 3072,
+  "initializer_range": 0.02,
+  "max_position_embeddings": 512,
+  "model_type": "distilbert",
+  "n_heads": 12,
+  "n_layers": 6,
+  "pad_token_id": 0,
+  "qa_dropout": 0.1,
+  "seq_classif_dropout": 0.2,
+  "sinusoidal_pos_embds": false,
+  "tie_weights_": true,
+  "torch_dtype": "float32",
+  "transformers_version": "4.53.2",
+  "vocab_size": 30522
+}
+
+2025-07-21 11:50:47,800 - __main__ - INFO -   Model device: cpu
+2025-07-21 11:50:47,800 - __main__ - INFO - Total loading time: 0.04 seconds
+2025-07-21 11:50:47,800 - __main__ - INFO - Loading training and validation datasets...
+2025-07-21 11:50:47,800 - __main__ - INFO - Loading dataset from: train_dataset.pt
